@@ -1,0 +1,239 @@
+# Set-Ups
+material = rna
+temperature[C] = 37.0
+trials = 10
+
+# component structures using DU+ notation
+# Transcription switch:
+structure G1 = U5 D13 (U5)
+structure G2 = U5 D13 (U5)
+structure G3 = U5 D13 (U5)
+structure G4 = U5 D13 (U5)
+structure G5 = U5 D13 (U5)
+structure G6 = U5 D13 (U5)
+structure G7 = U5 D13 (U5)
+structure G8 = U5 D13 (U5)
+structure G9 = U5 D13 (U5)
+structure G10 = U5 D13 (U5)
+structure G11 = U5 D13 (U5)
+structure G12 = U5 D13 (U5)
+structure G13 = U5 D13 (U5)
+structure G14 = U5 D13 (U5)
+structure G15 = U5 D13 (U5)
+structure G16 = U5 D13 (U5)
+structure G17 = U5 D13 (U5)
+structure G18 = U5 D13 (U5)
+structure G19 = U5 D13 (U5)
+structure G20 = U5 D13 (U5)
+
+# threshold complex:
+structure TH1 = U12 D8 (U5)
+structure TH2 = U12 D8 (U5)
+structure TH3 = U12 D8 (U5)
+structure TH4 = U12 D8 (U5)
+structure TH5 = U12 D8 (U5)
+structure TH6 = U12 D8 (U5)
+structure TH7 = U12 D8 (U5)
+structure TH8 = U12 D8 (U5)
+structure TH9 = U12 D8 (U5)
+structure TH10 = U12 D8 (U5)
+structure TH11 = U12 D8 (U5)
+structure TH12 = U12 D8 (U5)
+structure TH13 = U12 D8 (U5)
+structure TH14 = U12 D8 (U5)
+
+structure TH15 = U12 D8 (U5)
+structure TH16 = U12 D8 (U5)
+structure TH17 = U12 D8 (U5)
+structure TH18 = U12 D8 (U5)
+structure TH19 = U12 D8 (U5)
+structure TH20 = U12 D8 (U5)
+
+# repressor
+structure rR1 = D8 (U5) U12
+structure rR2 = D8 (U5) U12
+structure rR3 = D8 (U5) U12
+structure rR4 = D8 (U5) U12
+structure rR5 = D8 (U5) U12
+structure rR6 = D8 (U5) U12
+structure rR7 = D8 (U5) U12
+structure rR8 = D8 (U5) U12
+structure rR9 = D8 (U5) U12
+structure rR10 = D8 (U5) U12
+structure rR11 = D8 (U5) U12
+structure rR12 = D8 (U5) U12
+structure rR13 = D8 (U5) U12
+structure rR14 = D8 (U5) U12
+structure rR15 = D8 (U5) U12
+structure rR16 = D8 (U5) U12
+structure rR17 = D8 (U5) U12
+structure rR18 = D8 (U5) U12
+structure rR19 = D8 (U5) U12
+structure rR20 = D8 (U5) U12
+
+# setting up sequence domains
+domain ta = TAATA
+
+# transcription switch repression toehold
+domain thR1 = N5
+domain thR2 = N5
+domain thR3 = N5
+domain thR4 = N5
+domain thR5 = N5
+domain thR6 = N5
+domain thR7 = N5
+domain thR8 = N5
+domain thR9 = N5
+domain thR10 = N5
+domain thR11 = N5
+domain thR12 = N5
+domain thR13 = N5
+domain thR14 = N5
+domain thR15 = N5
+domain thR16 = N5
+domain thR17 = N5
+domain thR18 = N5
+domain thR19 = N5
+domain thR20 = N5
+
+# transcription switch brach-migration domain
+domain thG1 = N8
+domain thG2 = N8
+domain thG3 = N8
+domain thG4 = N8
+domain thG5 = N8
+domain thG6 = N8
+domain thG7 = N8
+domain thG8 = N8
+domain thG9 = N8
+domain thG10 = N8
+domain thG11 = N8
+domain thG12 = N8
+domain thG13 = N8
+domain thG14 = N8
+domain thG15 = N8
+domain thG16 = N8
+domain thG17 = N8
+domain thG18 = N8
+domain thG19 = N8
+domain thG20 = N8
+
+# transcription switch hairpin-loop domain
+domain thH1 = N5
+domain thH2 = N5
+domain thH3 = N5
+domain thH4 = N5
+domain thH5 = N5
+domain thH6 = N5
+domain thH7 = N5
+domain thH8 = N5
+domain thH9 = N5
+domain thH10 = N5
+domain thH11 = N5
+domain thH12 = N5
+domain thH13 = N5
+domain thH14 = N5
+domain thH15 = N5
+domain thH16 = N5
+domain thH17 = N5
+domain thH18 = N5
+domain thH19 = N5
+domain thH20 = N5
+
+# threshold repression toehold
+domain thT1 = N2
+domain thT2 = N2
+domain thT3 = N2
+domain thT4 = N2
+domain thT5 = N2
+domain thT6 = N2
+domain thT7 = N2
+domain thT8 = N2
+domain thT9 = N2
+domain thT10 = N2
+domain thT11 = N2
+domain thT12 = N2
+domain thT13 = N2
+domain thT14 = N2
+domain thT15 = N2
+domain thT16 = N2
+domain thT17 = N2
+domain thT18 = N2
+domain thT19 = N2
+domain thT20 = N2
+
+# thread sequence domains onto target structures
+# transcription switch
+G1.seq = thR1 ta* thG1* thH1 thG1 ta
+G2.seq = thR2 ta* thG2* thH2 thG2 ta
+G3.seq = thR3 ta* thG3* thH3 thG3 ta
+G4.seq = thR4 ta* thG4* thH4 thG4 ta
+G5.seq = thR5 ta* thG5* thH5 thG5 ta
+G6.seq = thR6 ta* thG6* thH6 thG6 ta
+G7.seq = thR7 ta* thG7* thH7 thG7 ta
+G8.seq = thR8 ta* thG8* thH8 thG8 ta
+G9.seq = thR9 ta* thG9* thH9 thG9 ta
+G10.seq = thR10 ta* thG10* thH10 thG10 ta
+G11.seq = thR11 ta* thG11* thH11 thG11 ta
+G12.seq = thR12 ta* thG12* thH12 thG12 ta
+G13.seq = thR13 ta* thG13* thH13 thG13 ta
+G14.seq = thR14 ta* thG14* thH14 thG14 ta
+G15.seq = thR15 ta* thG15* thH15 thG15 ta
+G16.seq = thR16 ta* thG16* thH16 thG16 ta
+G17.seq = thR17 ta* thG17* thH17 thG17 ta
+G18.seq = thR18 ta* thG18* thH18 thG18 ta
+G19.seq = thR19 ta* thG19* thH19 thG19 ta
+G20.seq = thR20 ta* thG20* thH20 thG20 ta
+
+# threshold
+TH1.seq = thT1 thR1 ta* thG1* thH1 thG1
+TH2.seq = thT2 thR2 ta* thG2* thH2 thG2
+TH3.seq = thT3 thR3 ta* thG3* thH3 thG3
+TH4.seq = thT4 thR4 ta* thG4* thH4 thG4
+TH5.seq = thT5 thR5 ta* thG5* thH5 thG5
+TH6.seq = thT6 thR6 ta* thG6* thH6 thG6
+TH7.seq = thT7 thR7 ta* thG7* thH7 thG7
+TH8.seq = thT8 thR8 ta* thG8* thH8 thG8
+TH9.seq = thT9 thR9 ta* thG9* thH9 thG9
+TH10.seq = thT10 thR10 ta* thG10* thH10 thG10
+TH11.seq = thT11 thR11 ta* thG11* thH11 thG11
+TH12.seq = thT12 thR12 ta* thG12* thH12 thG12
+TH13.seq = thT13 thR13 ta* thG13* thH13 thG13
+TH14.seq = thT14 thR14 ta* thG14* thH14 thG14
+TH15.seq = thT15 thR15 ta* thG15* thH15 thG15
+TH16.seq = thT16 thR16 ta* thG16* thH16 thG16
+TH17.seq = thT17 thR17 ta* thG17* thH17 thG17
+TH18.seq = thT18 thR18 ta* thG18* thH18 thG18
+TH19.seq = thT19 thR19 ta* thG19* thH19 thG19
+TH20.seq = thT20 thR20 ta* thG20* thH20 thG20
+
+# repressor
+rR1.seq = thG1* thH1* thG1 ta thR1* thT1*
+rR2.seq = thG2* thH2* thG2 ta thR2* thT2*
+rR3.seq = thG3* thH3* thG3 ta thR3* thT3*
+rR4.seq = thG4* thH4* thG4 ta thR4* thT4*
+rR5.seq = thG5* thH5* thG5 ta thR5* thT5*
+rR6.seq = thG6* thH6* thG6 ta thR6* thT6*
+rR7.seq = thG7* thH7* thG7 ta thR7* thT7*
+rR8.seq = thG8* thH8* thG8 ta thR8* thT8*
+rR9.seq = thG9* thH9* thG9 ta thR9* thT9*
+rR10.seq = thG10* thH10* thG10 ta thR10* thT10*
+rR11.seq = thG11* thH11* thG11 ta thR11* thT11*
+rR12.seq = thG12* thH12* thG12 ta thR12* thT12*
+rR13.seq = thG13* thH13* thG13 ta thR13* thT13*
+rR14.seq = thG14* thH14* thG14 ta thR14* thT14*
+rR15.seq = thG15* thH15* thG15 ta thR15* thT15*
+rR16.seq = thG16* thH16* thG16 ta thR16* thT16*
+rR17.seq = thG17* thH17* thG17 ta thR17* thT17*
+rR18.seq = thG18* thH18* thG18 ta thR18* thT18*
+rR19.seq = thG19* thH19* thG19 ta thR19* thT19*
+rR20.seq = thG20* thH20* thG20 ta thR20* thT20*
+
+# tubes
+tube Rs = rR1 rR2 rR3 rR4 rR5 rR6 rR7 rR8 rR9 rR10 rR11 rR12 rR13 rR14 rR15 rR16 rR17 rR18 rR19 rR20
+tube THs = TH1 TH2 TH3 TH4 TH5 TH6 TH7 TH8 TH9 TH10 TH11 TH12 TH13 TH14 TH15 TH16 TH17 TH18 TH19 TH20
+Rs.maxsize = 2
+THs.maxsize = 2
+
+# constraints
+prevent = AAAA, CCCC, GGGG, UUUU, KKKKKK, MMMMMM, RRRRRR, SSSSSS, WWWWWW, YYYYYY
