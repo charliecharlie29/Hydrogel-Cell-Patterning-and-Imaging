@@ -1,4 +1,4 @@
-# Hydrogel-Cell-Patterning-and-Imaging
+# Hydrogels-with-Tethered-Transcription-Circuit-Elements
 
 ## File Description
 * The `.np` nupack file for sequence design may be found in `Sequence Design`
